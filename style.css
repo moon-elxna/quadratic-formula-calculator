@@ -11,22 +11,22 @@ h1 {
     margin-top: 0px;
     margin-bottom: 5px;
     font-family: Arial, Helvetica, sans-serif;
-    font-size: 28px;
+    font-size: 26px;
 }
 
 h2 {
     font-family: Arial, Helvetica, sans-serif;
-    font-size: 22px;
+    font-size: 20px;
 }
 
 p {
     font-family: Arial, Helvetica, sans-serif;
-    font-size: 16px;
+    font-size: 14px;
 }
 
 button {
     font-family: Arial, Helvetica, sans-serif;
-    font-size: 16px;
+    font-size: 14px;
     border-radius: 25px;
     border-width: 0px;
     padding-left: 10px;
