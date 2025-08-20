@@ -5,17 +5,18 @@ function sendData() {
     const q = Number(document.getElementById("valueQ").value);
     let resultA, resultB; // Declare variables outside the if/else
 
-    let control = ((p / 2) ** 2 - q);
-    console.log(control)
+    let d = ((p / 2) ** 2 - q);
+    console.log(d)
 
-    if (control < 0) {
+    if (d < 0) {
         document.getElementById("output1").innerHTML = "Nicht lösbar";
+        document.getElementById("output2").innerHTML = " ";
     }
 
     else {
-        let resultA = -p / 2 + Math.sqrt(control);
+        let resultA = -p / 2 + Math.sqrt(d);
         resultA = resultA.toFixed(3)
-        let resultB = -p / 2 - Math.sqrt(control);
+        let resultB = -p / 2 - Math.sqrt(d);
         resultB = resultB.toFixed(3) 
 
         console.log("x1 =", resultA);

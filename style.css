@@ -17,25 +17,21 @@ button {
     font-family: Arial, Helvetica, sans-serif;
     font-size: 16px;
     border-radius: 25px;
-    border-color: #e2e7e9;
-    background-color: #e2e7e9;
-    border-style: solid;
-    padding-left: 8px;
-    padding-right: 8px;
-    padding-top: 2px;
-    padding-bottom: 2px;
+    border-width: 0px;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 4px;
+    padding-bottom: 4px;
 
 }
 
 button:hover {
-    margin-top: 0px;
-    -moz-box-shadow: 0px 0px 4px 1px grey;
-    -webkit-box-shadow: 0px 0px 4px 1px grey;
-    box-shadow: 0px 0px 4px 1px grey;
+    box-shadow: 0 0 12px #797d7f inset;
+
 }
 
 button:active {
-    background-color: grey;
+    background-color: #797d7f;
 
 }
 
