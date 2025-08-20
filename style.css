@@ -1,4 +1,17 @@
+#calc {
+    max-width: fit-content;
+    margin-left: auto;
+    margin-right: auto;
+
+    border: 0px;
+    background-color: #edeeef;
+    border-style: solid;
+    padding: 8vh;
+}
+
 h1 {
+    margin-top: 0vh;
+    margin-bottom: 5vh;
     font-family: Arial, Helvetica, sans-serif;
     font-size: 28px;
 }
@@ -6,7 +19,6 @@ h1 {
 h2 {
     font-family: Arial, Helvetica, sans-serif;
     font-size: 22px;
-    color: black;
 }
 
 p {
@@ -23,16 +35,17 @@ button {
     padding-right: 10px;
     padding-top: 4px;
     padding-bottom: 4px;
+    background-color: #cecece;
 
 }
 
 button:hover {
-    box-shadow: 0 0 12px #797d7f inset;
+    box-shadow: 0 0 12px #787878 inset;
 
 }
 
 button:active {
-    background-color: #797d7f;
+    background-color: #787878;
 
 }
 

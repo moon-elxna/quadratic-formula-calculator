@@ -10,21 +10,27 @@
 </head>
 
 <body>
-    <h1>p-q-Formel Rechner</h1>
+    <div id="calc">
+        <h1>p-q-Formel Rechner</h1>
 
-    <h2>Ausgangsform</h2>
-    <p>x<sup>2</sup> + px + q = 0</p>
+        <div id="info">
+            <h2>Ausgangsform</h2>
+            <p>x<sup>2</sup> + px + q = 0</p>
+        </div>
 
-    <h2>Input</h2>
-    <p>Wert von p: <input type="text" id="valueP"></p>
-    <p>Wert von q: <input type="text" id="valueQ"></p>
-    <p><button id="send" onclick="sendData()">Berechnen</button></p>
+        <div id="input">
+            <h2>Input</h2>
+            <p>Wert von p: <input type="text" id="valueP"></p>
+            <p>Wert von q: <input type="text" id="valueQ"></p>
+            <p><button id="send" onclick="sendData()">Berechnen</button></p>
+        </div>
 
-    <h2>Ergebnis</h2>
-    <p id="output1">Antwort</p>
-    <p id="output2"></p>
-
-
+        <div id="output">
+            <h2>Ergebnis</h2>
+            <p id="output1">Antwort</p>
+            <p id="output2"></p>
+        </div>
+    </div>
     <script src="script.js"></script>
 
 </body>
