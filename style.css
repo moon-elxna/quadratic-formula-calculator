@@ -2,11 +2,9 @@
     max-width: fit-content;
     margin-left: auto;
     margin-right: auto;
-
     border: 0px;
     background-color: #edeeef;
-    border-style: solid;
-    padding: 25px;
+    padding: 5vh 5vw;
 }
 
 h1 {
