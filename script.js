@@ -1,20 +1,22 @@
 function sendData() {
+
     const valueP = document.getElementById("valueP").value;
     const valueQ = document.getElementById("valueQ").value;
+
     if (valueP.trim() === "" || valueQ.trim() === "") {
+
+        let control = document.getElementById("buttonLang").innerHTML;
 
         if (control == "Deutsch"){
             document.getElementById("output1").innerHTML = "Bitte beide Werte eingeben";
             document.getElementById("output2").innerHTML = " ";
             return;
         }
-
         else if  (control =="English") {
             document.getElementById("output1").innerHTML = "Please enter both values";
             document.getElementById("output2").innerHTML = " ";
             return;
         }
-
         else {
             alert("Error beim Sprachenwechsel. / Error when changing language.")
         }
@@ -22,7 +24,6 @@ function sendData() {
 
     else{
 
-  
         const p = Number(document.getElementById("valueP").value);
         const q = Number(document.getElementById("valueQ").value);
         // imports the value of the input as numbers
@@ -40,18 +41,14 @@ function sendData() {
                 // checks if the value under the sqrt is less than zero
                 // if true writes error instead of answer
             }
-
             else if (control =="English") {
                 document.getElementById("output1").innerHTML = "No solution";
                 document.getElementById("output2").innerHTML = " ";
             }
-
             else {
                 alert("Error beim Sprachenwechsel. / Error when changing language.")
             }
-
         }
-
         else {
             let resultA = -p / 2 + Math.sqrt(d);
             resultA = resultA.toFixed(3)
@@ -63,13 +60,9 @@ function sendData() {
 
             document.getElementById("output1").innerHTML = "x<sub>1</sub> = " + resultA;
             document.getElementById("output2").innerHTML = "x<sub>2</sub> = " + resultB;
-            //displays the answers down below
-            
+            //displays the answers down below  
         }
-
-    }
-
-        
+    }    
 }
 
 function setLang(){
@@ -90,7 +83,6 @@ function setLang(){
         document.getElementById("buttonLang").innerHTML = "English";
 
     }
-
     else if (control =="English") {
         document.getElementById("title").innerHTML = "Quadratic formula calculator";
         document.getElementById("h1").innerHTML = "Quadratic formula calculator";
@@ -106,9 +98,7 @@ function setLang(){
         document.getElementById("buttonLang").innerHTML = "Deutsch";
 
     }
-
     else {
         alert("Error beim Sprachenwechsel. / Error when changing language.")
     }
-
 }
