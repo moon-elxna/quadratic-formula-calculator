@@ -8,12 +8,12 @@ function sendData() {
         let control = document.getElementById("buttonLang").innerHTML;
 
         if (control == "Deutsch"){
-            document.getElementById("output1").innerHTML = "Bitte beide Werte eingeben";
+            document.getElementById("output1").innerHTML = "Please enter both values";
             document.getElementById("output2").innerHTML = " ";
             return;
         }
         else if  (control =="English") {
-            document.getElementById("output1").innerHTML = "Please enter both values";
+            document.getElementById("output1").innerHTML = "Bitte beide Werte eingeben";
             document.getElementById("output2").innerHTML = " ";
             return;
         }
