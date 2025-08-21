@@ -1,36 +1,39 @@
 <!DOCTYPE html>
-<html lang="en">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="preload" href="style.css" as="style">
+    <title id="title">p-q-Formel Rechner</title>
     <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
+    <button id="buttonLang" onclick="setLang()">English</button>
+
+    <h1 id="h1">p-q-Formel Rechner</h1>
+
     <div id="calc">
-        <h1>p-q-Formel Rechner</h1>
 
         <div id="info">
-            <h2>Ausgangsform</h2>
-            <p>x<sup>2</sup> + px + q = 0</p>
+            <h2 id="h21">Ausgangsform</h2>
+            <p id="p1">x² + px + q = 0</p>
         </div>
 
         <div id="input">
-            <h2>Input</h2>
-            <p>Wert von p: <input type="text" id="valueP"></p>
-            <p>Wert von q: <input type="text" id="valueQ"></p>
+            <h2 id="h22">Eingabe</h2>
+            <p id="p2"><span id="labelp">Wert von p: </span><input type="text" id="valueP"></p>
+            <p id="p3"><span id="labelq">Wert von q: </span><input type="text" id="valueQ"></p>
             <p><button id="send" onclick="sendData()">Berechnen</button></p>
         </div>
 
         <div id="output">
-            <h2>Ergebnis</h2>
+            <h2 id="h23">Ergebnis</h2>
             <p id="output1">Antwort</p>
             <p id="output2"></p>
         </div>
+
     </div>
+
     <script src="script.js"></script>
 
 </body>

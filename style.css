@@ -4,14 +4,14 @@
     margin-right: auto;
     border: 0px;
     background-color: #edeeef;
-    padding: 5vh 5vw;
+    padding: 2.5vh 5vw;
 }
 
 h1 {
     margin-top: 0px;
-    margin-bottom: 5px;
     font-family: Arial, Helvetica, sans-serif;
     font-size: 28px;
+    text-align: center;
 }
 
 h2 {

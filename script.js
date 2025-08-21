@@ -18,10 +18,25 @@ function sendData() {
         //calculates the value under the sqrt
 
         if (d < 0) {
-            document.getElementById("output1").innerHTML = "Nicht lösbar";
-            document.getElementById("output2").innerHTML = " ";
-            // checks if the value under the sqrt is less than zero
-            // if true writes error instead of answer
+
+            let control = document.getElementById("buttonLang").innerHTML;
+
+            if (control == "Deutsch"){
+                document.getElementById("output1").innerHTML = "Nicht lösbar";
+                document.getElementById("output2").innerHTML = " ";
+                // checks if the value under the sqrt is less than zero
+                // if true writes error instead of answer
+            }
+
+            else if (control =="English") {
+                document.getElementById("output1").innerHTML = "No solution";
+                document.getElementById("output2").innerHTML = " ";
+            }
+
+            else {
+                alert("Error beim Sprachenwechsel. / Error when changing language.")
+            }
+
         }
 
         else {
@@ -42,4 +57,45 @@ function sendData() {
     }
 
         
+}
+
+function setLang(){
+    let control = document.getElementById("buttonLang").innerHTML;
+
+    if (control == "Deutsch"){
+        document.getElementById("title").innerHTML = "p-q-Formel Rechner";
+        document.getElementById("h1").innerHTML = "p-q-Formel Rechner";
+        document.getElementById("h21").innerHTML = "Ausgangsform";
+        document.getElementById("p1").innerHTML = "x² + px + q = 0";
+        document.getElementById("h22").innerHTML = "Eingabe";
+        document.getElementById("labelp").textContent = "Wert von p:";
+        document.getElementById("labelq").textContent  = "Wert von q:";
+        document.getElementById("send").innerHTML = "Berechnen";
+        document.getElementById("h23").innerHTML = "Ergebnis";
+        document.getElementById("output1").innerHTML = "Antwort";
+        document.getElementById("output2").innerHTML = " ";        
+        document.getElementById("buttonLang").innerHTML = "English";
+
+    }
+
+    else if (control =="English") {
+        document.getElementById("title").innerHTML = "Quadratic formula calculator";
+        document.getElementById("h1").innerHTML = "Quadratic formula calculator";
+        document.getElementById("h21").innerHTML = "Standard form";
+        document.getElementById("p1").innerHTML = "x² + bx + c = 0";
+        document.getElementById("h22").innerHTML = "Input";
+        document.getElementById("labelp").textContent  = "Value of b:";
+        document.getElementById("labelq").textContent  = "Value of c:";
+        document.getElementById("send").innerHTML = "Calculate";
+        document.getElementById("h23").innerHTML = "Result";
+        document.getElementById("output1").innerHTML = "Answer";
+        document.getElementById("output2").innerHTML = " ";       
+        document.getElementById("buttonLang").innerHTML = "Deutsch";
+
+    }
+
+    else {
+        alert("Error beim Sprachenwechsel. / Error when changing language.")
+    }
+
 }
