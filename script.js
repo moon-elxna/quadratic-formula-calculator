@@ -68,8 +68,8 @@ function setLang(){
         document.getElementById("h21").innerHTML = "Ausgangsform";
         document.getElementById("p1").innerHTML = "x² + px + q = 0";
         document.getElementById("h22").innerHTML = "Eingabe";
-        document.getElementById("labelp").textContent = "Wert von p:";
-        document.getElementById("labelq").textContent  = "Wert von q:";
+        document.getElementById("labelp").textContent = "Wert von p: ";
+        document.getElementById("labelq").textContent  = "Wert von q:  ";
         document.getElementById("send").innerHTML = "Berechnen";
         document.getElementById("h23").innerHTML = "Ergebnis";
         document.getElementById("output1").innerHTML = "Antwort";
@@ -84,8 +84,8 @@ function setLang(){
         document.getElementById("h21").innerHTML = "Standard form";
         document.getElementById("p1").innerHTML = "x² + bx + c = 0";
         document.getElementById("h22").innerHTML = "Input";
-        document.getElementById("labelp").textContent  = "Value of b:";
-        document.getElementById("labelq").textContent  = "Value of c:";
+        document.getElementById("labelp").textContent  = "Value of b: ";
+        document.getElementById("labelq").textContent  = "Value of c: ";
         document.getElementById("send").innerHTML = "Calculate";
         document.getElementById("h23").innerHTML = "Result";
         document.getElementById("output1").innerHTML = "Answer";
