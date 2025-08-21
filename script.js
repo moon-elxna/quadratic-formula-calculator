@@ -2,9 +2,22 @@ function sendData() {
     const valueP = document.getElementById("valueP").value;
     const valueQ = document.getElementById("valueQ").value;
     if (valueP.trim() === "" || valueQ.trim() === "") {
-        document.getElementById("output1").innerHTML = "Bitte beide Werte eingeben";
-        document.getElementById("output2").innerHTML = " ";
-        return;
+
+        if (control == "Deutsch"){
+            document.getElementById("output1").innerHTML = "Bitte beide Werte eingeben";
+            document.getElementById("output2").innerHTML = " ";
+            return;
+        }
+
+        else if  (control =="English") {
+            document.getElementById("output1").innerHTML = "Please enter both values";
+            document.getElementById("output2").innerHTML = " ";
+            return;
+        }
+
+        else {
+            alert("Error beim Sprachenwechsel. / Error when changing language.")
+        }
     }
 
     else{
