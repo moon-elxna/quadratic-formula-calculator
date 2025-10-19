@@ -36,13 +36,13 @@ function sendData() {
             let control = document.getElementById("buttonLang").innerHTML;
 
             if (control == "Deutsch"){
-                document.getElementById("output1").innerHTML = "Nicht lösbar";
+                document.getElementById("output1").innerHTML = "No solution";
                 document.getElementById("output2").innerHTML = " ";
                 // checks if the value under the sqrt is less than zero
                 // if true writes error instead of answer
             }
             else if (control =="English") {
-                document.getElementById("output1").innerHTML = "No solution";
+                document.getElementById("output1").innerHTML = "Nicht lösbar";
                 document.getElementById("output2").innerHTML = " ";
             }
             else {
